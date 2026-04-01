@@ -3,25 +3,246 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Introduction page for Alex Lopez." />
-    <title>Alex Lopez | Introduction</title>
+    <meta
+      name="description"
+      content="Alexander Lopez portfolio: education, experience, projects, and skills."
+    />
+    <title>Alexander Lopez | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="intro-page">
-      <section class="intro-card">
-        <p class="eyebrow">Hello, welcome.</p>
-        <h1>Hi, I am Alex Lopez.</h1>
-        <p>
-          I am a frontend developer focused on building clean, responsive, and user-friendly
-          websites. This page is the starting point of my personal site.
-        </p>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top">AL</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#resume">Resume</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Computer Science + Math @ Northeastern</p>
+          <h1>Alexander Lopez</h1>
+          <p class="lead">
+            I am a combined Computer Science and Mathematics student focused on AI and
+            systems, with experience spanning software engineering, research, and teaching.
+            I enjoy building high-impact products and applying rigorous quantitative
+            thinking to real-world technical problems.
+          </p>
+          <ul class="contact-list">
+            <li><a href="tel:+12039548701">203-954-8701</a></li>
+            <li><a href="mailto:lopez.alexan@northeastern.edu">lopez.alexan@northeastern.edu</a></li>
+            <li><a href="https://linkedin.com/in/lopezalexan/" target="_blank" rel="noreferrer">linkedin.com/in/lopezalexan</a></li>
+            <li>New Haven, CT</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="AlexLopez_Resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+            <a class="btn btn-secondary" href="AlexLopez_Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="profile-photo.png" alt="Portrait of Alexander Lopez" />
+          <p class="photo-note">Professional headshot of Alexander Lopez.</p>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <h2>Resume</h2>
+        <article class="card resume-card">
+          <p>
+            Access my latest resume for full details on experience, projects, coursework,
+            and leadership.
+          </p>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="AlexLopez_Resume.pdf" target="_blank" rel="noreferrer">Open Resume</a>
+            <a class="btn btn-secondary" href="AlexLopez_Resume.pdf" download>Download PDF</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>SWE Intern, Expandya</h3>
+            <p>Westport, CT | June 2025 - September 2025</p>
+          </div>
+          <ul>
+            <li>
+              Built database architecture improvements in Python and C++ for 50M+ row
+              datasets using optimized indexing and query caching, cutting latency and
+              improving retrieval speeds by over 1,000% in high-concurrency environments.
+            </li>
+            <li>
+              Led weekly technical presentations for clients and delivered data-driven
+              strategy recommendations to support customer acquisition and retention.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>Research Assistant, O'Hern Lab at Yale University</h3>
+            <p>New Haven, CT | June 2023 - September 2023</p>
+          </div>
+          <ul>
+            <li>
+              Optimized backend scripts to process 10,000+ cancer-related protein variants
+              on Yale HPC clusters, generating simulations from AlphaFold and NetSurfP
+              models to evaluate pathogenic structural impact.
+            </li>
+            <li>
+              Presented weekly progress and findings, culminating in a departmental
+              Computational Biology presentation at Yale.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>Teaching Assistant, Northeastern University</h3>
+            <p>Boston, MA | September 2025 - Present</p>
+          </div>
+          <ul>
+            <li>
+              Teach weekly recitations for a Computer Systems course covering logic gates,
+              low-level circuits, Assembly, and C.
+            </li>
+            <li>
+              Support students in office hours through debugging assistance and technical
+              coaching on course projects.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>Brotherhood Chair, Pi Kappa Alpha (Kappa Delta)</h3>
+            <p>Boston, MA | January 2026 - Present</p>
+          </div>
+          <ul>
+            <li>
+              Collaborate with executive board members to build leadership initiatives
+              centered on mentorship, networking, and professional development.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>IMC Prosperity 3</h3>
+            <p>March 2025 - April 2025</p>
+          </div>
+          <ul>
+            <li>
+              Placed top 2% globally (184/12,000) in algorithmic trading with a team-driven
+              strategy portfolio across market making, scalping, locational arbitrage, and
+              mean reversion.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>Momentum Trading Bot</h3>
+            <p>July 2024 - August 2024</p>
+          </div>
+          <ul>
+            <li>
+              Built a day-trading bot with Alpaca API that computes RSI across Dow Jones 30
+              stocks and allocates capital to oversold positions (RSI below 20), reaching
+              an initial CAGR of 8.29% and a peak of 20.37%.
+            </li>
+            <li>
+              Applied momentum and mean reversion strategy design, order type selection, and
+              position management via stop-loss/take-profit controls.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>QHO Bot</h3>
+            <p>September 2023 - October 2023</p>
+          </div>
+          <ul>
+            <li>
+              Developed a Selenium-based Python automation tool for rapid office-hours queue
+              registration, helping students secure earlier support slots.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>Northeastern University, Khoury College of Computer Science</h3>
+            <p>September 2024 - May 2028</p>
+          </div>
+          <ul>
+            <li>
+              Combined BSE in Computer Science and Mathematics, Concentration in AI.
+            </li>
+            <li>Cumulative GPA: 3.74/4.0 | Major GPA: 3.94/4.0</li>
+            <li>
+              Programming: C++, C, Python, Java, JavaScript, OCaml | Tools: PyTorch, React,
+              SQL, AWS, Pandas, HTML/CSS
+            </li>
+            <li>
+              Coursework includes Operating Systems, Data Structures and Algorithms,
+              Advanced Probability and Statistics, Number Theory I, Group Theory, and
+              Numerical Methods for Differential Equations.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-heading">
+            <h3>Hopkins School</h3>
+            <p>June 2024</p>
+          </div>
+          <ul>
+            <li>
+              Activities: Math Team, Science Olympiad, Model UN, Diversity Board, and
+              varsity athletics including Wrestling (Captain), Football, and Track.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills and Interests</h2>
+        <article class="card">
+          <p>
+            <strong>Skills:</strong> Microsoft Office Suite, Analytical Thinking,
+            Communication, Project Management, Problem-Solving, Adaptability, Attention to
+            Detail
+          </p>
+          <p>
+            <strong>Interests:</strong> Running (training for my second marathon), indoor
+            and outdoor rock climbing, Manchester United, and soccer culture.
+          </p>
+        </article>
       </section>
     </main>
   </body>
